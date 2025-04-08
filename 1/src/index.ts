@@ -137,3 +137,21 @@ const getMostExpensiveCar = (cars: carListType[]): carListType => {
         return currentCar.price > maxCar.price ? currentCar : maxCar;
     })
 }
+
+type User = {
+    name: string,
+    age: number,
+    location?: string, // optional properties
+    readonly email: string,
+}
+
+const user: User = {
+    name: "martin",
+    age: 23,
+    location: "skopje",
+    email: "sd"
+}
+
+// user.email = "martin@gmail.com"; // this is not allowed
+
+console.log(user);
