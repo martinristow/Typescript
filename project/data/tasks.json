@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Todo #1",
+    "description": "Hello world",
+    "due_date": "01-01:2025"
+  },
+  {
+    "title": "Todo #2",
+    "description": "Start Python project",
+    "due_date": "05-01:2025"
+  },
+  {
+    "title": "Todo #3",
+    "description": "Read article on machine learning",
+    "due_date": "10-01:2025"
+  },
+  {
+    "title": "Todo #4",
+    "description": "Send email to professor",
+    "due_date": "12-01:2025"
+  },
+  {
+    "title": "Todo #5",
+    "description": "Practice LeetCode problems",
+    "due_date": "15-01:2025"
+  },
+  {
+    "title": "Todo #6",
+    "description": "Write a blog post",
+    "due_date": "20-01:2025"
+  },
+  {
+    "title": "Todo #7",
+    "description": "Read a self-help book",
+    "due_date": "25-01:2025"
+  },
+  {
+    "title": "Todo #8",
+    "description": "Backup all projects",
+    "due_date": "28-01:2025"
+  },
+  {
+    "title": "Todo #9",
+    "description": "Learn a new feature in Pandas",
+    "due_date": "30-01:2025"
+  },
+  {
+    "title": "Todo #10",
+    "description": "Go for a nature walk",
+    "due_date": "31-01:2025"
+  }
+]
