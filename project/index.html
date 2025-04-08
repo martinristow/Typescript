@@ -7,6 +7,13 @@
 </head>
 <body>
 
+<form id="createTaskForm">
+    <input type="text" placeholder="Enter the task title" id="taskTitle" required>
+    <textarea placeholder="Enter the task description" id="taskDescription" required></textarea>
+    <input type="datetime-local" id="taskDueDate" required>
+    <button type="submit">Create task</button>
+</form>
+
 <div id="taskList"></div>
 
 <script src="./dist/bundle.js"></script>
