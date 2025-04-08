@@ -1,6 +1,7 @@
+import {getAllTasks, showTasks} from "./models/tasks";
+
 export {};
 
-let name: string = "Martin";
+const response = await getAllTasks();
 
-console.log(name);
-let ok: boolean = true;
+showTasks(response);
