@@ -1,12 +1,14 @@
 import {FaUserCircle} from "react-icons/fa";
 
 interface UserCardPropsInterface {
-    index: number;
-    person: string;
+    person: {
+        name: string;
+        following: boolean;
+    };
 }
 
 
-const UserCard = ({index, person}: UserCardPropsInterface) => {
+const UserCard = ({person}: UserCardPropsInterface) => {
 
 
     return (
