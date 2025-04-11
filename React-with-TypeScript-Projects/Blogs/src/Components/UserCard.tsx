@@ -17,7 +17,13 @@ const UserCard = ({index, person}: UserCardPropsInterface) => {
             </section>
 
 
-            <button className='px-4 py-1 text-sm rounded-full'>{person.following ? 'Following' : 'Follow'}</button>
+            <button className={`px-4 py-1 text-sm rounded-full ${
+                person.following ? "bg-black text-white" : 'bg-gray-200 text-gray-700'
+            }`}
+            >
+
+
+                {person.following ? 'Following' : 'Follow'}</button>
         </div>
     )
 }
