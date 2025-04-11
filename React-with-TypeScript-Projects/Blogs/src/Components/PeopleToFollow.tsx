@@ -1,3 +1,4 @@
+import UserCard from "./UserCard.tsx";
 
 const peopleToFollow = [
     { name: "Alena Gouse", following: false },
