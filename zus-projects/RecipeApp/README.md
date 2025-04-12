@@ -1,54 +1,61 @@
-# React + TypeScript + Vite
+# 🍲 Recipe App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple recipe management application built with React and Zustand for global state management. This app allows users
+to add, edit, and delete recipes, including their ingredients and instructions. It features a clean and responsive UI
+built with TailwindCSS.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Add Recipes**: Users can input the name, ingredients, and instructions for new recipes.
+- **Edit Recipes**: Users can edit existing recipes and update them.
+- **Delete Recipes**: Users can delete recipes from the list.
+- **State Management**: Uses Zustand for managing recipe data globally.
+- **Responsive UI**: The app is styled with TailwindCSS to ensure it looks great on all screen sizes.
 
-## Expanding the ESLint configuration
+## 📦 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React**: A JavaScript library for building user interfaces.
+- **Zustand**: A small, fast, and scalable state management library for React.
+- **TailwindCSS**: A utility-first CSS framework for styling.
+- **TypeScript**: A statically typed superset of JavaScript for type safety.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Getting Started
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 1. Clone the repository
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+    git clone https://github.com/martinristow/Typescript/tree/main/zus-projects/RecipeApp
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### 2. Install dependencies
+
+    npm install
+
+### 3. Start the development server
+
+    npm run dev
+
+ - The app will run on http://localhost:5173 (or whichever port Vite uses).
+
+### Usage
+
+- Add a new recipe by entering the recipe name, ingredients (comma separated), and instructions in the form.
+- Edit any recipe by clicking the "Edit" button, which pre-fills the form with the current recipe details.
+- Delete any recipe by clicking the "Delete" button next to the recipe.
+- The app stores the recipe data globally using Zustand and allows the user to manage their recipe collection
+  seamlessly.
+
+### 🧪 Folder Structure
+
+    src/
+    ├── components/
+    │   └── RecipeApp.tsx     # Main recipe logic and UI
+    ├── store/
+    │   └── useStore.ts       # Zustand store for managing recipes
+    ├── App.tsx               # Root component
+    ├── main.tsx              # Entry point
+
+### 📝 Future Improvements
+
+    Add persistent storage using localStorage or a backend
+    Add recipe image uploads
+    Add category/tags for filtering recipes
+    Improve mobile responsiveness and accessibility
