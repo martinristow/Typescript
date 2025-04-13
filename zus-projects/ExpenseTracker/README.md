@@ -33,7 +33,6 @@ interface is styled with Tailwind CSS, offering a clean and modern design across
 1. **Clone the repository**
    ```bash
    git clone https://github.com/martinristow/Typescript/tree/main/zus-projects/ExpenseTracker
-   cd expense-tracker
 
 2. **Install dependencies**
     ```bash
