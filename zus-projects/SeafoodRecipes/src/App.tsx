@@ -1,8 +1,11 @@
+import Meals from "./components/Meals.tsx";
 
 
 const App = () => {
     return (
-        <div>App</div>
+        <div>
+            <Meals/>
+        </div>
     )
 }
 export default App
