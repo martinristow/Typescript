@@ -1,6 +1,10 @@
+import ExpenseTracker from "./components/ExpenseTracker.tsx";
+
 const App = () => {
     return (
-        <div>App</div>
+        <div>
+            <ExpenseTracker/>
+        </div>
     )
 }
 export default App
