@@ -14,10 +14,21 @@ const fetchPosts = async () => {
 }
 
 
+
+
+
 const FetchFromMultipleEndpoints = () => {
 
     const [currentTodoId, setCurrentTodoId] = useState(1)
     const [currentPostId, setCurrentPostId] = useState(1)
+
+    const handleNextTodoClick = () => {
+        setCurrentTodoId((prevId) => Math.min(prevId + 1, todosData.length))
+    }
+
+    const handleNextPostClick = () => {
+        setCurrentPostId((prevId) => prevId + 1)
+    }
 
 
     const results = useQueries({
@@ -46,7 +57,13 @@ const FetchFromMultipleEndpoints = () => {
         <div>
             <h1>Todos</h1>
             <pre>{JSON.stringify(todosData.find((todo: any) => todo.id === currentTodoId ), null, 2)}</pre>
-            <pre>{JSON.stringify(postsData)}</pre>
+
+            <button onClick={handleNextTodoClick}>Next Todo</button>
+            <br/>
+            <h1>Posts</h1>
+            <pre>{JSON.stringify(postsData.find((post: any)=> post.id === currentPostId), null ,2)}</pre>
+            <button onClick={handleNextPostClick}>Next Post</button>
+
         </div>
     )
 }
