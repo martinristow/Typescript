@@ -3,7 +3,11 @@
 // import Deduplication from "./components/Deduplication.tsx";
 // import StaleTime from "./components/StaleTime.tsx";
 
-import ReFetchInterval from "./components/ReFetchInterval.tsx";
+// import ReFetchInterval from "./components/ReFetchInterval.tsx";
+
+
+
+import FetchFromMultipleEndpoints from "./components/FetchFromMultipleEndpoints.tsx";
 
 const App = () => {
 
@@ -13,7 +17,8 @@ const App = () => {
             {/*<WithTanStackQuery/>*/}
             {/*<Deduplication/>*/}
             {/*<StaleTime/>*/}
-            <ReFetchInterval/>
+            {/*<ReFetchInterval/>*/}
+            <FetchFromMultipleEndpoints/>
         </div>
     )
 }
