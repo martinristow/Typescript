@@ -14,9 +14,6 @@ const fetchPosts = async () => {
 }
 
 
-
-
-
 const FetchFromMultipleEndpoints = () => {
 
     const [currentTodoId, setCurrentTodoId] = useState(1)
@@ -46,8 +43,9 @@ const FetchFromMultipleEndpoints = () => {
 
     const [todosQuery, postsQuery] = results
 
-    if(todosQuery.isLoading || postsQuery.isLoading) return <h1>Loading...</h1>
-    if(todosQuery.error || postsQuery.error) return <h1>An error occurred: {todosQuery.error?.message || postsQuery.error?.message}</h1>
+    if (todosQuery.isLoading || postsQuery.isLoading) return <h1>Loading...</h1>
+    if (todosQuery.error || postsQuery.error) return <h1>An error
+        occurred: {todosQuery.error?.message || postsQuery.error?.message}</h1>
 
 
     const todosData = todosQuery.data;
@@ -56,12 +54,12 @@ const FetchFromMultipleEndpoints = () => {
     return (
         <div>
             <h1>Todos</h1>
-            <pre>{JSON.stringify(todosData.find((todo: any) => todo.id === currentTodoId ), null, 2)}</pre>
+            <pre>{JSON.stringify(todosData.find((todo: any) => todo.id === currentTodoId), null, 2)}</pre>
 
             <button onClick={handleNextTodoClick}>Next Todo</button>
             <br/>
             <h1>Posts</h1>
-            <pre>{JSON.stringify(postsData.find((post: any)=> post.id === currentPostId), null ,2)}</pre>
+            <pre>{JSON.stringify(postsData.find((post: any) => post.id === currentPostId), null, 2)}</pre>
             <button onClick={handleNextPostClick}>Next Post</button>
 
         </div>
