@@ -27,7 +27,7 @@ const FetchFromMultipleEndpoints = () => {
     }
 
     const handleNextPostClick = () => {
-        setCurrentPostId((prevId) => prevId + 1)
+        setCurrentPostId((prevId) => Math.min(prevId + 1, postsData.length))
     }
 
 
