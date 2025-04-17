@@ -7,7 +7,11 @@
 
 
 
-import FetchFromMultipleEndpoints from "./components/FetchFromMultipleEndpoints.tsx";
+// import FetchFromMultipleEndpoints from "./components/FetchFromMultipleEndpoints.tsx";
+
+// import {UseMutation} from "./components/useMutation.tsx";
+
+import Pagination from "./components/Pagination.tsx";
 
 const App = () => {
 
@@ -18,7 +22,9 @@ const App = () => {
             {/*<Deduplication/>*/}
             {/*<StaleTime/>*/}
             {/*<ReFetchInterval/>*/}
-            <FetchFromMultipleEndpoints/>
+            {/*<FetchFromMultipleEndpoints/>*/}
+            {/*<UseMutation/>*/}
+            <Pagination/>
         </div>
     )
 }
