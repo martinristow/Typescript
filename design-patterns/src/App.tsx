@@ -1,8 +1,15 @@
+import SplitScreen from "./components/SplitScreen.tsx";
+import Left from "./components/Left.tsx";
+import Right from "./components/Right.tsx";
+
 const App = () => {
     return (
-        <div><h1 className="text-3xl font-bold underline">
-            Hello world!
-        </h1></div>
+        <>
+            <SplitScreen leftWeight={15} rightWeight={80}>
+                <Left/>
+                <Right/>
+            </SplitScreen>
+        </>
     )
 }
 export default App
